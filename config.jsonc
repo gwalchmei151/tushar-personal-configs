@@ -1,0 +1,23 @@
+{
+  "logo": "Linux",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "shell",
+    "terminal",
+    "cpu",
+    "memory",
+    "disk"
+  ],
+  "display": {
+    "separator": " → ",
+    "color": "#DA627D"
+  },
+  "colors": {
+    "title": "#9A348E",
+    "key": "#FCA17D",
+    "value": "#86BBD8"
+  }
+}
