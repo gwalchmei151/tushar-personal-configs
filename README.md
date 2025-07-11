@@ -6,3 +6,6 @@
 
 ## Screenshot
 ![](./assets/terminal.png)
+
+## Credits
+[XeroLayan](https://github.com/xerolinux/xero-layan-git/tree/main)
