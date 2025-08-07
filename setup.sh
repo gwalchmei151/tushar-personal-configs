@@ -12,8 +12,6 @@ apt install terminator -y
 
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>t" -n -t string -s "/usr/bin/terminator"
 
-
-
 git clone https://github.com/dracula/terminator.git
 
 ./terminator/install.sh
@@ -34,4 +32,5 @@ curl https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs
 
 fastfetch -c /home/$SUDO_USER/.config/fastfetch/config.jsonc
 
-sudo -u $SUDO_USER zsh -c "source ~/.zshrc"
+xdotool key ctrl+t 
+#sudo -u $SUDO_USER zsh -c "source ~/.zshrc"
