@@ -14,7 +14,7 @@ apt update
 apt install -y terminator fastfetch xdotool git curl
 
 # Set Ctrl+T as shortcut for Terminator in XFCE
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>t" -n -t string -s "/usr/bin/terminator"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>t" -t string -s "/usr/bin/terminator" --create
 
 # Install Dracula theme for Terminator
 cd "$USER_HOME"
