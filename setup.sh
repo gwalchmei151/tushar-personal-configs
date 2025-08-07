@@ -50,5 +50,4 @@ chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config" "$USER_HOME/.zshrc" "$USER_H
 # Run Fastfetch once for visual confirmation (optional)
 sudo -u "$USERNAME" fastfetch -c "$USER_HOME/.config/fastfetch/config.jsonc"
 
-# Simulate Ctrl+T to launch Terminator (optional, only works in GUI environment)
-xdotool key ctrl+t
+sudo -u "$USERNAME" terminator & disown && exit
