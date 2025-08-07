@@ -264,4 +264,3 @@ if [[ $- == *i* ]] && command -v fastfetch >/dev/null; then
 fi
 
 eval "$(starship init zsh)"
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
