@@ -8,6 +8,10 @@ apt update
 
 cd /home/$SUDO_USER
 
+apt install terminator
+
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>t" -n -t string -s "/usr/bin/terminator"
+
 git clone https://github.com/dracula/terminator.git
 
 ./install.sh
