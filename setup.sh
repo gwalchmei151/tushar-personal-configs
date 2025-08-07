@@ -16,9 +16,11 @@ git clone https://github.com/dracula/terminator.git
 
 ./terminator/install.sh
 
+curl -S https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs/heads/main/terminator_config -o /home/$SUDO_USER/.config/terminator/config
+
 curl -sS https://starship.rs/install.sh | sh
 
-curl https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs/heads/main/starship-pastel-w-timing-vienv.toml -o /home/$SUDO_USER/.config/starship.toml
+curl -S https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs/heads/main/starship-pastel-w-timing-vienv.toml -o /home/$SUDO_USER/.config/starship.toml
 
 apt install fastfetch -y
 
@@ -28,7 +30,7 @@ curl -S https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/r
 
 rm /home/$SUDO_USER/.zshrc
 
-curl https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs/heads/main/.zshrc -o /home/$SUDO_USER/.zshrc
+curl -S https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs/heads/main/.zshrc -o /home/$SUDO_USER/.zshrc
 
 fastfetch -c /home/$SUDO_USER/.config/fastfetch/config.jsonc
 
