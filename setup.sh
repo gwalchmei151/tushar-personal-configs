@@ -6,6 +6,12 @@ fi
 
 apt update
 
+cd /home/$SUDO_USER
+
+git clone https://github.com/dracula/terminator.git
+
+./install.sh
+
 curl -sS https://starship.rs/install.sh | sh
 
 curl https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs/heads/main/starship-pastel-w-timing-vienv.toml -o /home/$SUDO_USER/.config/starship.toml
