@@ -8,19 +8,21 @@ apt update
 
 cd /home/$SUDO_USER
 
-apt install terminator
+apt install terminator -y
 
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>t" -n -t string -s "/usr/bin/terminator"
 
+
+
 git clone https://github.com/dracula/terminator.git
 
-./install.sh
+./terminator/install.sh
 
 curl -sS https://starship.rs/install.sh | sh
 
 curl https://raw.githubusercontent.com/gwalchmei151/tushar-personal-configs/refs/heads/main/starship-pastel-w-timing-vienv.toml -o /home/$SUDO_USER/.config/starship.toml
 
-apt install fastfetch
+apt install fastfetch -y
 
 mkdir -p /home/$SUDO_USER/.config/fastfetch
 
