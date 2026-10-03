@@ -2,6 +2,7 @@ format = """
 [](#9A348E)\
 $os\
 $username\
+$shell\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
 [](fg:#DA627D bg:#FCA17D)\
@@ -157,6 +158,17 @@ format = '[ $symbol ($version) ]($style)'
 detect_extensions = []
 detect_files = []
 detect_folders = []
+
+[shell]
+disabled = false
+style = "bg:#9A348E"
+format = '[$indicator ]($style)'
+bash_indicator = "👊"
+zsh_indicator = "🐚"
+fish_indicator = "🐟"
+powershell_indicator = ">_"
+nu_indicator = "nu"
+unknown_indicator = "?"
 
 [custom.python_venv]
 when = ''' [ -n "$VIRTUAL_ENV" ] '''
